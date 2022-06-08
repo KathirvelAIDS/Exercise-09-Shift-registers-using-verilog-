@@ -58,18 +58,21 @@ A Parallel in Parallel out (PIPO) shift register is used as a temporary storage 
 Program for  Implementation-of Shift-registers-using-verilog-
 Developed by: kathirvel.A
 RegisterNumber:  212221230047
+
+~~~
+
 module sipo(c,si,po);
 input c,si;
 output [7:0] po;
 reg [7:0] temp;
-
 always @ (posedge c)
 begin
 temp = {temp[6:0],si};
 end
 assign po = temp;
 endmodule
-*/
+
+~~~
 
 
 
@@ -185,7 +188,8 @@ RTL LOGIC REGISTERS:
 TIMING DIGRAMS FOR SHIFT REGISTERS
 
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/94911373/172528257-6bde0b0a-bf4d-4366-96a3-e6367d234bcc.png)
+
 
 
 
